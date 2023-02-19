@@ -1,0 +1,31 @@
+[user]
+	email = joshuaryan.velasquez.22@protonmail.com
+	name = Joshua Ryan V. Velasquez
+[github]
+	user = joshua-afk
+[core]
+	editor = vim
+[alias]
+	hard = reset --hard
+	soft = reset --soft
+	ci = commit
+	p = push
+	st = status
+	cm = commit -m
+	co = checkout
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	plog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	cfc = show --pretty --name-only
+	unstage = reset HEAD --
+	del = branch -D
+	new = checkout -b
+	amend = commit --amend
+[color]
+	ui = true
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[credential]
+	helper = cache --timeout=3600
