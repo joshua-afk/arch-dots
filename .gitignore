@@ -1,0 +1,12 @@
+# DIRECTORIES
+clones/
+cache/
+
+# DOTFILES
+.autojump/
+.XAuthority
+.bash_history
+.bash_logout
+.bash_profile
+
+# FILES
