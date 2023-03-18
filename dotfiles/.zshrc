@@ -34,6 +34,10 @@ alias update="sudo pacman -Syu"
 #alias install="sudo apt install -y"
 alias zshrc="vim ~/.zshrc"
 
+# ALIAS: VIM, NVIM
+alias vim=nvim
+alias diff='vim -c ":Gdiffsplit"'
+
 # Autojump
 [[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
