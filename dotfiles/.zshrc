@@ -34,6 +34,10 @@ alias grep="grep -n --color"
 #alias install="sudo apt install -y"
 alias zshrc="vim ~/.zshrc"
 
+# Autojump
+[[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename "$HOME/.zshrc"
