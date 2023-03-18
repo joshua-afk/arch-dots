@@ -12,12 +12,33 @@ SAVEHIST=1000
 unsetopt beep notify
 bindkey -v
 
+# PATHS
+path+=("/bin")
+path+=("/usr/bin")
+path+=("/usr/local/bin")
+path+=("/usr/games")
+path+=("/usr/sbin")
+path+=("/usr/local/sbin")
+export PATH
+
+# ALIAS: MISC
+alias reload="source ~/.zshrc"
+alias ls="ls --color=auto"
+alias ll="ls -l --color=auto"
+alias la="ls -a --color=auto"
+alias lla="ll -a --color=auto"
+alias :q="exit"
+alias grep="grep -n --color"
+#alias update="sudo apt update"
+#alias upgrade="sudo apt upgrade -y"
+#alias install="sudo apt install -y"
+alias zshrc="vim ~/.zshrc"
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/joshua-afk/.zshrc'
+zstyle :compinstall filename "$HOME/.zshrc"
 
-
-source '/home/joshua-afk/clones/powerlevel10k/powerlevel10k.zsh-theme'
+source "$HOME/clones/powerlevel10k/powerlevel10k.zsh-theme"
 
 autoload -Uz compinit
 compinit
