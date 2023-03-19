@@ -1,3 +1,6 @@
+-------- PLUG --------
+require 'plug'
+
 -------- ABBREVIATIONS --------
 require 'abbrev'
 
