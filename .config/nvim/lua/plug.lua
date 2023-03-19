@@ -10,6 +10,7 @@ Plug('mg979/vim-visual-multi', {branch = 'master'})
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'psliwka/vim-smoothie'
 Plug 'unblevable/quick-scope'
+Plug 'nvim-tree/nvim-tree.lua'
 
 -- Linters
 Plug 'mfussenegger/nvim-lint'
