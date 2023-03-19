@@ -1,3 +1,6 @@
+-------- ABBREVIATIONS --------
+require 'abbrev'
+
 -------- SETTINGS --------
 require 'settings'
 
