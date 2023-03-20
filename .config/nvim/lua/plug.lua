@@ -12,6 +12,10 @@ Plug 'psliwka/vim-smoothie'
 Plug 'unblevable/quick-scope'
 Plug 'nvim-tree/nvim-tree.lua'
 
+-- Telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 -- Linters
 Plug 'mfussenegger/nvim-lint'
 Plug 'digitaltoad/vim-pug'
