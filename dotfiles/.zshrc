@@ -32,11 +32,15 @@ alias grep="grep -n --color"
 alias update="sudo pacman -Syu"
 #alias upgrade="sudo apt upgrade -y"
 #alias install="sudo apt install -y"
-alias zshrc="vim ~/.zshrc"
+alias zshrc="v ~/.zshrc"
+alias gtoken="v ~/git-token.md"
 
 # ALIAS: VIM, NVIM
-alias vim=nvim
-alias diff='vim -c ":Gdiffsplit"'
+alias v=nvim
+alias diff='v -c ":Gdiffsplit"'
+
+# ALIAS: DIRECTORY
+alias brightness="cd /sys/class/backlight/intel_backlight/"
 
 # Autojump
 [[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
