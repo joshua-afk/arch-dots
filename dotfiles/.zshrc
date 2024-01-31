@@ -21,6 +21,13 @@ path+=("/usr/sbin")
 path+=("/usr/local/sbin")
 export PATH
 
+# FAST CD
+alias ..="cd ../"
+alias ...="cd ../../"
+alias ....="cd ../../../"
+
+# ALIAS: MISC
+alias reload="source ~/.zshrc"
 # ALIAS: MISC
 alias reload="source ~/.zshrc"
 alias ls="ls --color=auto"
