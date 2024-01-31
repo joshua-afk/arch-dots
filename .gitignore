@@ -1,13 +1,24 @@
-clones/
-cache/
+# default folders
+Desktop/ 
+Downloads/
+Obsidian Vault/
+Pictures/
 
+# dotfiles
 .autojump/
 .XAuthority
 .bash_history
 .bash_logout
 .bash_profile
 
+# configs
 .config/QtProject.conf
 .config/Signal
 .config/Thunar
 .config/keepassxc
+
+# etc
+clones/
+books/
+projects/
+cache/
