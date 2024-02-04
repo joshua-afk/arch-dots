@@ -1,3 +1,9 @@
+-------- GLOBALS --------
+g = vim.g
+o = vim.o
+api = vim.api
+keymap = vim.keymap
+
 -------- PLUG --------
 require 'plug'
 
@@ -9,3 +15,6 @@ require 'settings'
 
 -------- MAPPINGS --------
 require 'mappings'
+
+-------- AUTO-COMMANDS --------
+--require 'auto-commands'
