@@ -1,9 +1,12 @@
-local Plug = vim.fn['plug#']
+local Plug = fn['plug#']
 
 vim.call('plug#begin', '~/.config/nvim/plugged')
 -- Core
+Plug 'nvim-lua/plenary.nvim'
+Plug 'numToStr/Comment.nvim'
 Plug 'chrisbra/vim-diff-enhanced'
 Plug 'junegunn/vim-easy-align'
+Plug 'notjedi/nvim-rooter.lua'
 
 -- Navigation
 Plug('mg979/vim-visual-multi', {branch = 'master'})
@@ -32,10 +35,16 @@ Plug 'ap/vim-css-color'
 
 -- Git
 Plug 'tpope/vim-fugitive'
+Plug 'f-person/git-blame.nvim'
 
 -- Theme
 Plug 'rakr/vim-one'
 Plug 'catppuccin/nvim'
+
+-- LSP
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'neovim/nvim-lspconfig'
 
 -- ETC
 Plug 'tpope/vim-surround'
@@ -48,4 +57,5 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'nvim-tree/nvim-web-devicons'
 vim.call('plug#end')
