@@ -1,8 +1,4 @@
-g = vim.g
-o = vim.o
-api = vim.api
-keymap = vim.keymap
-options = { noremap = true }
+local options = { noremap = true }
 
 -- Remap Leader
 keymap.set("n", "<Space>", "<Nop>", { silent = true, remap = false })
@@ -56,10 +52,15 @@ api.nvim_set_keymap('n', '<leader>sp', ':split <cr>', options)
 api.nvim_set_keymap('n', '<leader>30', ':vertical resize 30 <cr>', options)
 
 -- Open explorer.exe in current directory
-api.nvim_set_keymap('n', '<leader>exp', ':!explorer.exe . <cr><cr>', options)
 
 -- Fast fold block of code
 api.nvim_set_keymap('n', 'zz', 'zf%', options)
 
 -- Swith between 2 latest buffers
 api.nvim_set_keymap('n', '<tab>', '<c-6>', options)
+
+-- LSP
+-- vim.keymap.set('n', 'K', vim.lsp.buf.hover, options)
+-- vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, options)
+-- vim.keymap.set('n', '<leader>gr', vim.lsp.buf.references, options)
+
