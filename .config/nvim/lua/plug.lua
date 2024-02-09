@@ -9,7 +9,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'notjedi/nvim-rooter.lua'
 
 -- Navigation
-Plug('mg979/vim-visual-multi', {branch = 'master'})
+Plug('mg979/vim-visual-multi', { branch = 'master' })
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'psliwka/vim-smoothie'
 Plug 'unblevable/quick-scope'
@@ -46,16 +46,20 @@ Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
 
+-- SNIPPET
+Plug 'L3MON4D3/LuaSnip'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'rafamadriz/friendly-snippets'
+Plug 'saadparwaiz1/cmp_luasnip'
+
 -- ETC
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-eunuch'
 Plug 'jiangmiao/auto-pairs'
-
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'hrsh7th/nvim-cmp'
 Plug 'nvim-tree/nvim-web-devicons'
 vim.call('plug#end')
