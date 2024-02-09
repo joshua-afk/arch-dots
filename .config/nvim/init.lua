@@ -1,6 +1,7 @@
 -------- GLOBALS --------
 g = vim.g
 o = vim.o
+fn = vim.fn
 api = vim.api
 keymap = vim.keymap
 
@@ -17,4 +18,4 @@ require 'settings'
 require 'mappings'
 
 -------- AUTO-COMMANDS --------
---require 'auto-commands'
+require 'auto-commands'
