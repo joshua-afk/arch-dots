@@ -1,21 +1,13 @@
--------- GLOBALS --------
+-- GLOBALS
 g = vim.g
 o = vim.o
 fn = vim.fn
 api = vim.api
 keymap = vim.keymap
 
--------- PLUG --------
+-- CORE
 require 'plug'
-
--------- ABBREVIATIONS --------
-require 'abbrev'
-
--------- SETTINGS --------
+require 'abbreviations'
 require 'settings'
-
--------- MAPPINGS --------
 require 'mappings'
-
--------- AUTO-COMMANDS --------
 require 'auto-commands'
