@@ -1,0 +1,8 @@
+os:
+  open: 'xdg-open {{filename}} >/dev/null'
+  copyToClipboardCmd: ''
+  editPreset: 'nvim'
+git:
+  paging:
+    colorArg: always
+    pager: diff-so-fancy
