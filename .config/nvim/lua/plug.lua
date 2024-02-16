@@ -4,9 +4,11 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 -- Core
 Plug 'nvim-lua/plenary.nvim'
 Plug 'numToStr/Comment.nvim'
+Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'chrisbra/vim-diff-enhanced'
 Plug 'junegunn/vim-easy-align'
 Plug 'notjedi/nvim-rooter.lua'
+Plug 'nvim-treesitter/nvim-treesitter'
 
 -- Navigation
 Plug('mg979/vim-visual-multi', { branch = 'master' })
@@ -61,5 +63,5 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-eunuch'
 Plug 'jiangmiao/auto-pairs'
-Plug 'nvim-tree/nvim-web-devicons'
+-- Plug 'nvim-tree/nvim-web-devicons'
 vim.call('plug#end')
