@@ -15,32 +15,39 @@ bindkey -v
 # PATHS
 path+=("/bin")
 path+=("/usr/bin")
+path+=("/usr/lib")
 path+=("/usr/local/bin")
 path+=("/usr/games")
 path+=("/usr/sbin")
 path+=("/usr/local/sbin")
 export PATH
 
-# FAST CD
+# Ruby on Rails
+path+=("/home/joshua-afk/.rbenv")
+eval "$(rbenv init - zsh)"
+
+# FAST BROWSING
 alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
+alias e="dolphin ."
 
-# ALIAS: MISC
-alias reload="source ~/.zshrc"
+# GIT
+alias gs="git status"
+alias ga="git add"
+alias gp="git push"
+alias gc="git commit"
+alias gl="git lol"
+
 # ALIAS: MISC
 alias reload="source ~/.zshrc"
 alias ls="ls --color=auto"
 alias ll="ls -l --color=auto"
 alias la="ls -a --color=auto"
 alias lla="ll -a --color=auto"
-alias :q="exit"
 alias grep="grep -n --color"
-alias update="sudo pacman -Syu"
-#alias upgrade="sudo apt upgrade -y"
-#alias install="sudo apt install -y"
 alias zshrc="v ~/.zshrc"
-alias gtoken="v ~/git-token.md"
+alias :q="exit"
 
 # ALIAS: VIM, NVIM
 alias v=nvim
