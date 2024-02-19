@@ -34,3 +34,5 @@ telescope.setup {
     },
   },
 }
+
+telescope.load_extension('lazygit')

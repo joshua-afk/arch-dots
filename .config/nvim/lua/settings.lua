@@ -3,6 +3,7 @@ o = vim.o
 opt = vim.opt
 api = vim.api
 
+o.termguicolors = true
 o.t_Co=256
 o.encoding='UTF-8'
 o.hidden=true
@@ -35,6 +36,7 @@ o.lazyredraw=false
 o.clipboard='unnamedplus'
 o.fixendofline=false
 o.completeopt='menu,menuone,noselect'
+o.signcolumn='yes'
 
 -- Backup file
 o.swapfile=false
@@ -44,9 +46,9 @@ o.undofile=true
 opt.undodir=vim.fn.expand("~/.config/nvim-undo")
 
 -- TAB
-o.tabstop=2                		-- Width of tab character
-o.softtabstop=2                       	-- Fine tunes the amount of white space to be added
-o.shiftwidth=2                        	-- Number of spaces to use for autoindenting
+o.tabstop=4                         		-- Width of tab character
+o.softtabstop=4                       	-- Fine tunes the amount of white space to be added
+o.shiftwidth=4                        	-- Number of spaces to use for autoindenting
 o.expandtab=true                        -- Use spaces instead of tabs
 
 -- Fold

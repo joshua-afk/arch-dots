@@ -1,5 +1,4 @@
-api = vim.api
-tree = require("nvim-tree")
+local tree = require("nvim-tree")
 
 -- Options
 tree.setup({

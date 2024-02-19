@@ -9,6 +9,13 @@ Plug 'chrisbra/vim-diff-enhanced'
 Plug 'junegunn/vim-easy-align'
 Plug 'notjedi/nvim-rooter.lua'
 Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'RRethy/vim-illuminate'
+Plug 'lukas-reineke/indent-blankline.nvim'
+
+-- Copilot
+Plug 'zbirenbaum/copilot.lua'
+Plug 'zbirenbaum/copilot-cmp'
 
 -- Navigation
 Plug('mg979/vim-visual-multi', { branch = 'master' })
@@ -38,6 +45,7 @@ Plug 'ap/vim-css-color'
 -- Git
 Plug 'tpope/vim-fugitive'
 Plug 'f-person/git-blame.nvim'
+Plug 'kdheepak/lazygit.nvim'
 
 -- Theme
 Plug 'rakr/vim-one'
@@ -47,6 +55,7 @@ Plug 'catppuccin/nvim'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
+Plug 'onsails/lspkind.nvim'
 
 -- SNIPPET
 Plug 'L3MON4D3/LuaSnip'
@@ -63,5 +72,5 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-eunuch'
 Plug 'jiangmiao/auto-pairs'
--- Plug 'nvim-tree/nvim-web-devicons'
+Plug 'nvim-tree/nvim-web-devicons'
 vim.call('plug#end')
