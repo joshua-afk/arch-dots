@@ -1,8 +1,10 @@
 lastupdatecheck: 0
 recentrepos:
-- /home/joshua-afk/projects/OOParking-Lot
 - /home/joshua-afk
+- /home/joshua-afk/projects/OOParking-Lot
 startuppopupversion: 5
-customcommandshistory: []
+customcommandshistory:
+- set filetype?
+- q
 hidecommandlog: false
 ignorewhitespaceindiffview: false

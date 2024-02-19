@@ -33,11 +33,15 @@ alias ....="cd ../../../"
 alias e="dolphin ."
 
 # GIT
-alias gs="git status"
+alias lg="lazygit"
+alias diff='git diff'
 alias ga="git add"
-alias gp="git push"
 alias gc="git commit"
+alias gf="git fetch"
 alias gl="git lol"
+alias gp="git push"
+alias gP="git pull"
+alias gs="git status"
 
 # ALIAS: MISC
 alias reload="source ~/.zshrc"
@@ -47,11 +51,10 @@ alias la="ls -a --color=auto"
 alias lla="ll -a --color=auto"
 alias grep="grep -n --color"
 alias zshrc="v ~/.zshrc"
-alias :q="exit"
+alias q="exit"
 
 # ALIAS: VIM, NVIM
 alias v=nvim
-alias diff='v -c ":Gdiffsplit"'
 
 # ALIAS: DIRECTORY
 alias brightness="cd /sys/class/backlight/intel_backlight/"
@@ -82,3 +85,7 @@ compinit
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

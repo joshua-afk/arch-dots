@@ -4,7 +4,7 @@
 [github]
 	user = joshua-afk
 [core]
-	editor = vim
+	editor = nvim
 [alias]
 	hard = reset --hard
 	soft = reset --soft
