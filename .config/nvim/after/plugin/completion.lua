@@ -1,6 +1,7 @@
 local cmp = require("cmp")
 local luasnip = require("luasnip")
 local lspkind = require("lspkind")
+
 local vscode_snippets_path = vim.fn.stdpath('config')..'/snippets/vscode'
 local snipmate_snippets_path = vim.fn.stdpath('config')..'/snippets/snipmate'
 local catppuccin_color = require("catppuccin.palettes").get_palette()
@@ -8,6 +9,9 @@ local catppuccin_color = require("catppuccin.palettes").get_palette()
 require("luasnip.loaders.from_vscode").lazy_load()
 require("luasnip.loaders.from_vscode").lazy_load({ paths = { vscode_snippets_path } })
 require("luasnip.loaders.from_snipmate").lazy_load({ paths = { snipmate_snippets_path } })
+
+vim.keymap.set({"i", "s"}, "<C-L>", function() luasnip.jump( 1) end, {silent = true})
+vim.keymap.set({"i", "s"}, "<C-J>", function() luasnip.jump(-1) end, {silent = true})
 
 local has_words_before = function()
   if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then return false end

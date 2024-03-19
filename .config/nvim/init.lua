@@ -11,3 +11,6 @@ require 'abbreviations'
 require 'settings'
 require 'mappings'
 require 'auto-commands'
+
+-- TODO
+-- install nrpattern
