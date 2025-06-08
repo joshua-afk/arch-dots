@@ -1,0 +1,8 @@
+[tools]
+ruby = "3.2.2"
+
+[settings]
+idiomatic_version_file_enable_tools = ["rub", "ruby"]
+# [tools]
+# ruby = "3.1.6"
+# usage = "latest"
