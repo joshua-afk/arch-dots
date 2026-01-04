@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Arch only
+if [[ "{{ .chezmoi.config.env.distro }}" != "arch" ]]; then
+  exit 0
+fi
+
+SRC="{{ .chezmoi.sourceDir }}/arch"
+
+install_pacman() {
+  local file="$1"
+  if [[ -s "$file" ]]; then
+    echo "Installing repo packages from $(basename "$file")"
+    sudo pacman -S --needed --noconfirm - < "$file"
+  fi
+}
+
+install_aur() {
+  local file="$1"
+  if [[ ! -f "$file" ]]; then
+    echo "Warning: $file not found, skipping"
+    return 0
+  fi
+  if [[ -s "$file" ]]; then
+    echo "Installing AUR packages from $(basename "$file")"
+    paru -S --needed - < "$file"
+  else
+    echo "$(basename "$file") is empty, skipping"
+  fi
+}
+
+# Repo packages
+install_pacman "$SRC/pkglist-repo-common.txt"
+
+CPU_VENDOR=$(lscpu | grep "Vendor ID" | awk '{print $3}')
+
+if [[ "$CPU_VENDOR" == "GenuineIntel" ]]; then
+  install_pacman "$SRC/pkglist-repo-intel.txt"
+elif [[ "$CPU_VENDOR" == "AuthenticAMD" ]]; then
+  install_pacman "$SRC/pkglist-repo-amd.txt"
+fi
+
+# AUR packages
+if command -v paru >/dev/null; then
+  install_aur "$SRC/pkglist-aur-common.txt"
+else
+  echo "paru not found, skipping AUR packages"
+fi

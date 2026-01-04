@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+[[ "{{ .chezmoi.config.env.distro }}" == "arch" ]] || exit 0
+
+LIST="{{ .chezmoi.sourceDir }}/arch/flatpak-apps.txt"
+
+# Ensure flatpak exists, install if missing
+command -v flatpak >/dev/null || sudo pacman -S --needed flatpak
+
+# Nothing declared
+[[ -s "$LIST" ]] || { echo "no flatpak declared"; exit 0; }
+
+# Check if any declared flatpak is installed
+installed_apps=$(flatpak list --app --columns=application || true)
+
+if ! grep -Fxq -f "$LIST" <<< "$installed_apps"; then
+  echo "no flatpak installed"
+fi
