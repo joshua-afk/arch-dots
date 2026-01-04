@@ -1,4 +1,6 @@
-# IMPORTANT
+# README!
+
+### **IMPORTANT**: Don't add private repo in `.chezmoiexternal.toml`. Better clone them manually
 
 ### On GPU upgrade
 Change the `onnxruntime-cpu` in `arch/pkglist-aur-common.txt.tmpl` to specific
