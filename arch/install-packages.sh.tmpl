@@ -36,9 +36,14 @@ install_pacman "$SRC/pkglist-repo-common.txt"
 CPU_VENDOR=$(lscpu | grep "Vendor ID" | awk '{print $3}')
 
 if [[ "$CPU_VENDOR" == "GenuineIntel" ]]; then
+  echo "Intel CPU detected, installing Intel-specific packages"
   install_pacman "$SRC/pkglist-repo-intel.txt"
 elif [[ "$CPU_VENDOR" == "AuthenticAMD" ]]; then
+  echo "AMD CPU detected, installing AMD-specific packages"
   install_pacman "$SRC/pkglist-repo-amd.txt"
+else
+  echo "Unknown CPU vendor: $CPU_VENDOR. Check the script in chezmoi
+  'install-packages.sh.tmpl'"
 fi
 
 # AUR packages
