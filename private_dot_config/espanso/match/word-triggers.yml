@@ -1,0 +1,48 @@
+# https://espanso.org/docs/matches/basics/#word-triggers
+# Trigger patterns is mostly the first three consonants
+
+matches:
+  - trigger: alh
+    replace: although
+    propagate_case: true
+    word: true
+
+  - trigger: bcs
+    replace: because
+    propagate_case: true
+    word: true
+
+  - trigger: hwv
+    replace: however
+    propagate_case: true
+    word: true
+
+  - trigger: Iv
+    replace: "I've"
+    word: true
+
+  - trigger: lkn
+    replace: "looking"
+    word: true
+
+  - trigger: prb
+    replace: "problem"
+    word: true
+
+  - trigger: qst
+    replace: "question"
+    word: true
+
+  - trigger: thr
+    replace: there
+    word: true
+
+  ### multi words ###
+  - trigger: crv
+    replace: "code review"
+    word: true
+
+  - trigger: oth
+    replace: "on the other hand"
+    word: true
+

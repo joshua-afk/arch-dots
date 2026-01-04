@@ -1,0 +1,7 @@
+matches:
+  - trigger: ">pp"
+    replace: "password"
+
+  - trigger: ">lpass"
+    replace: "Thisisalongpassword123!"
+
