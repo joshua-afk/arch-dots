@@ -1,7 +1,7 @@
 # The contents of this should be PATHS & ALIAS
 
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PYENV_ROOT/bin:$HOME/go/bin:$HOME/.local/bin:$PATH"
 
 eval "$(pyenv init --path)"
 
@@ -11,9 +11,9 @@ alias ...="cd ../../"
 alias ....="cd ../../../"
 
 # CONFIGS
-alacritty() { "v ~/.config/alacritty/alacritty.toml" }
-gitconf()   { "v ~/.gitconfig"                       }
-kittyconf() { "v ~/.config/kitty/kitty.conf"         }
-roficonf()  { "v ~/.config/rofi/config.rasi"         }
-tmuxconf()  { "v ~/.config/tmux/tmux.conf"           }
-zshrc()     { "v ~/.zshrc"                           }
+alacritty() { nvim ~/.config/alacritty/alacritty.toml }
+gitconf()   { nvim ~/.gitconfig                       }
+kittyconf() { nvim ~/.config/kitty/kitty.conf         }
+roficonf()  { nvim ~/.config/rofi/config.rasi         }
+tmuxconf()  { nvim ~/.config/tmux/tmux.conf           }
+zshrc()     { nvim ~/.zshrc                           }
