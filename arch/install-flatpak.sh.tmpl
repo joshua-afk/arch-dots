@@ -30,7 +30,7 @@ while IFS= read -r app; do
     echo "  ✓ $app already installed"
   else
     echo "  → Installing $app"
-    flatpak install -y flathub "$app"
+    flatpak install --user -y flathub "$app"
   fi
 done < "$LIST"
 
