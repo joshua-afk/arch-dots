@@ -1,3 +1,6 @@
+[DetailsMode]
+PreviewSize=16
+
 [FileDialogSize]
 2 screens: Height=540
 2 screens: Width=864
@@ -9,9 +12,15 @@ ViewPropsTimestamp=2024,11,16,18,59,13.723
 [IconsMode]
 PreviewSize=96
 
+[InformationPanel]
+showHovered=false
+
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
 
 [PreviewSettings]
 Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,avif,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs,gdk-pixbuf-thumbnailer,gsf-office
